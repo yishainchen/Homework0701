@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ijO-Fw-kgt">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JK0-ow-USn">
+                                <rect key="frame" x="0.0" y="406" width="320" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="454644028.320647">
+                                    <!--2015-05-30 02:00:28 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="valueChanged:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fts-BM-dKs"/>
+                                </connections>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDb-hq-mek">
+                                <rect key="frame" x="11" y="84" width="275" height="30"/>
+                                <state key="normal" title="現在:別想，別怕，別後退，現在就是永遠">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnTime:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UwP-ib-tqf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GhU-a5-yj7">
+                                <rect key="frame" x="16" y="122" width="60" height="30"/>
+                                <state key="normal" title="時間快轉">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnQuickTime:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qDY-lg-RaB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGh-E8-uYg">
+                                <rect key="frame" x="16" y="160" width="146" height="30"/>
+                                <state key="normal" title="3小時20分以後頂樓見">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnNextTime:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3gF-ek-bHn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYx-KA-Kol">
+                                <rect key="frame" x="16" y="236" width="73" height="30"/>
+                                <state key="normal" title="Show time">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showTime:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rpg-E9-Lav"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVw-C4-Foe">
+                                <rect key="frame" x="16" y="198" width="234" height="30"/>
+                                <state key="normal" title="下一次星期天: 台北下著雨的星期天">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnNextSunday:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sLu-67-Xjm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wge-f4-yuT">
+                                <rect key="frame" x="16" y="274" width="90" height="30"/>
+                                <state key="normal" title="取得時間明細">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnTimeDetail:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="M5v-3J-ou6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v48-Mz-vg4">
+                                <rect key="frame" x="16" y="322" width="90" height="30"/>
+                                <state key="normal" title="上一次星期天">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnPreSunday:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6ma-Ne-meY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JK0-ow-USn" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Meq-du-Vb8"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="JK0-ow-USn" secondAttribute="bottom" id="gfL-9e-XbW"/>
+                            <constraint firstAttribute="trailing" secondItem="JK0-ow-USn" secondAttribute="trailing" id="gsP-LQ-NdP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nKr-7f-Sdq"/>
+                    <connections>
+                        <outlet property="DatePicker" destination="JK0-ow-USn" id="Nut-Em-M6d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1358" y="174.99999999999997"/>
+        </scene>
+        <!--Date Table View Controller-->
+        <scene sceneID="tP7-NK-Ibk">
+            <objects>
+                <tableViewController id="UU0-L0-vMB" customClass="DateTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="be5-Ih-hSR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="c7d-8E-NdC">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c7d-8E-NdC" id="8Le-mV-TSr">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="UU0-L0-vMB" id="vB8-je-8d8"/>
+                            <outlet property="delegate" destination="UU0-L0-vMB" id="WGc-yI-9B9"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="oXI-5P-PYL"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OWw-Nr-oFd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1358" y="897"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="teW-ui-XYM">
+            <objects>
+                <tableViewController storyboardIdentifier="Change" id="MNU-NU-CrM" customClass="TableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="o6M-g4-pUn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Change" id="BFy-J1-hy9">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BFy-J1-hy9" id="ZYa-4Z-HKb">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="MNU-NU-CrM" id="d2q-ZB-NPo"/>
+                            <outlet property="delegate" destination="MNU-NU-CrM" id="1PJ-oc-QJ1"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="OKU-88-iqk"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1jG-Rc-mRk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2101.3333333333335" y="159.98666666666668"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="w9x-TD-MHl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ijO-Fw-kgt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Pcd-sn-BiK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="sHK-th-MCZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KL5-OL-cr1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="826" y="174.99999999999997"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
